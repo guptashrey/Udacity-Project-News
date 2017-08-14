@@ -6,12 +6,12 @@ import android.content.Context;
 import java.util.List;
 
 /**
- * Created by shreygupta on 14/08/17.
+ * Created by Shrey Gupta on 14/08/17.
  */
 
 class NewsLoader extends AsyncTaskLoader<List<News>> {
 
-    private String mUrl;
+    private final String mUrl;
 
     NewsLoader(Context context, String url) {
         super(context);

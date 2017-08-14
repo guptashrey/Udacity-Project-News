@@ -1,16 +1,16 @@
 package net.shreygupta.news;
 
 /**
- * Created by shreygupta on 14/08/17.
+ * Created by Shrey Gupta on 14/08/17.
  */
 
 class News {
 
-    String mUrl;
-    private String mTitle;
-    private String mAuthor;
-    private String mDate;
-    private String mSection;
+    final String mUrl;
+    private final String mTitle;
+    private final String mAuthor;
+    private final String mDate;
+    private final String mSection;
 
     News(String title, String author, String url, String date, String section) {
         mTitle = title;

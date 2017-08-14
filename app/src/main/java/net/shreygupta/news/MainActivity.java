@@ -21,9 +21,9 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<List<News>>, SwipeRefreshLayout.OnRefreshListener {
 
 
-    private static int NEWS_LOADER_ID = 1;
-    SwipeRefreshLayout swipe;
-    LoaderManager loaderManager = getLoaderManager();
+    private static final int NEWS_LOADER_ID = 1;
+    private final LoaderManager loaderManager = getLoaderManager();
+    private SwipeRefreshLayout swipe;
     private NewsAdapter mAdapter;
 
     @Override
